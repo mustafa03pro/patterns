@@ -4,12 +4,12 @@ int main(){
     printf("enter the no of rows: ");scanf("%d",&n);
     
     for(r=1;r<=n;r++){
-        for(int s=1;s<=n-r;s++)printf(" ");
-        for (c=s; c<=n; c++)
+        for( s=1;s<=n-r;s++)printf(" ");
+        for (c=1;c<=r;c++)
         {
-            printf("%d",c);
+            printf("**");
         }
-        printf("\n");
+        printf("\b \n");
         
     }
     return 0;
